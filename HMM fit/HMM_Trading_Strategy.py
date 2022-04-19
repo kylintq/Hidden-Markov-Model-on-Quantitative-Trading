@@ -97,10 +97,6 @@ while i<len(close):
                 r_up.append(r1)
                 i=sell+1
                 count_up=count_up+1
-                
-
-                if Time[sell]-Time[buy]>8:
-                    time_up.append(date[sell]-date[buy])
                 if Time[sell]-Time[buy]<2:
                     time_up.append(date[sell]-date[buy])
                 elif Time[sell]-Time[buy]>=6:
@@ -126,10 +122,6 @@ while i<len(close):
                 r_down.append(r1)
                 i=buy+1
                 count_down=count_down+1
-                
-
-                if Time[buy]-Time[sell]>8:
-                   time_down.append(date[buy]-date[sell])
                 if Time[buy]-Time[sell]<2:
                    time_down.append(date[buy]-date[sell])
                 elif Time[buy]-Time[sell]>=6:
